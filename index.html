@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpearRoyale - 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cherry-canvas"></div>
+
+  <svg class="branch-svg top-left" width="380" height="380" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 350 Q80 240 180 160 Q250 110 340 60" stroke="#F04FA3" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M180 160 Q200 130 240 115" stroke="#F04FA3" stroke-width="2" fill="none"/>
+    <path d="M120 220 Q150 200 185 205" stroke="#F04FA3" stroke-width="2" fill="none"/>
+    <path d="M240 115 Q280 105 310 95" stroke="#F04FA3" stroke-width="1.5" fill="none"/>
+    <circle cx="340" cy="60" r="7" fill="#F04FA3"/>
+    <circle cx="310" cy="95" r="5" fill="#FF65B5"/>
+    <circle cx="240" cy="115" r="5" fill="#F04FA3"/>
+    <circle cx="185" cy="205" r="4" fill="#FF65B5"/>
+    <circle cx="150" cy="200" r="3" fill="#F04FA3"/>
+  </svg>
+
+  <svg class="branch-svg top-right" width="380" height="380" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 350 Q80 240 180 160 Q250 110 340 60" stroke="#F04FA3" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M180 160 Q200 130 240 115" stroke="#F04FA3" stroke-width="2" fill="none"/>
+    <path d="M120 220 Q150 200 185 205" stroke="#F04FA3" stroke-width="2" fill="none"/>
+    <circle cx="340" cy="60" r="7" fill="#F04FA3"/>
+    <circle cx="240" cy="115" r="5" fill="#FF65B5"/>
+    <circle cx="185" cy="205" r="4" fill="#FF65B5"/>
+  </svg>
+
+  <svg class="branch-svg bottom-left" width="380" height="380" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 350 Q80 240 180 160 Q250 110 340 60" stroke="#F04FA3" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="340" cy="60" r="7" fill="#F04FA3"/>
+    <circle cx="240" cy="115" r="5" fill="#FF65B5"/>
+  </svg>
+
+  <svg class="branch-svg bottom-right" width="380" height="380" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 350 Q80 240 180 160 Q250 110 340 60" stroke="#F04FA3" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="340" cy="60" r="7" fill="#F04FA3"/>
+    <circle cx="240" cy="115" r="5" fill="#FF65B5"/>
+  </svg>
+
+  <div class="petals" id="petals"></div>
+
+  <div class="page">
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo">
+          <span class="logo-mark font-pixel">S</span>
+          <span class="logo-text font-pixel">SPEAR<span>ROYALE</span></span>
+        </a>
+
+        <button class="mobile-toggle font-mono" id="menuToggle" aria-label="Toggle menu">≡</button>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#why">Why Spearroyale</a>
+          <a href="#rules">Rules</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://discord.spearroyale.xyz" target="_blank" rel="noopener" class="btn btn-discord">Discord</a>
+          <a href="https://store.spearroyale.xyz" target="_blank" rel="noopener" class="btn btn-pink">Store</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-eyebrow font-mono">
+            <span class="dot"></span>
+            Now live on <strong>1.21.11</strong> · Purpur
+          </div>
+
+          <h1 class="hero-title font-pixel">SPEAR<span>ROYALE</span></h1>
+
+          <p class="hero-sub">
+            Competitive Minecraft PvP. <strong>No pay-to-win.</strong> Just combat and clean fights.
+          </p>
+
+          <div class="ip-pill">
+            <span class="label">Server IP</span>
+            <span class="ip-value" id="serverIP">spearroyale.xyz</span>
+            <button class="copy-btn" id="copyIPBtn">
+              <span id="copyIcon">⧉</span> <span id="copyText">Copy</span>
+            </button>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#home" class="btn btn-pink" id="playNowBtn">
+              Play Now <span class="btn-arrow">→</span>
+            </a>
+            <a href="https://discord.spearroyale.xyz" target="_blank" rel="noopener" class="btn btn-discord">
+              Join Discord <span class="btn-arrow">→</span>
+            </a>
+            <a href="https://store.spearroyale.xyz" target="_blank" rel="noopener" class="btn btn-ghost">
+              Visit Store <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-tag font-mono">01 / Features</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title font-pixel">Built for <span class="accent">real PvP</span></h2>
+          <p class="section-sub">Everything on SpearRoyale is tuned for fair, fast, and competitive combat.</p>
+
+          <div class="feature-grid">
+            <div class="f-card">
+              <div class="f-icon">⚡</div>
+              <h3>Zero Lag</h3>
+              <p>Purpur 1.21.11 with tuned performance config. Hit registration you can actually trust.</p>
+            </div>
+            <div class="f-card">
+              <div class="f-icon">🛡</div>
+              <h3>Fair Play</h3>
+              <p>Active moderation, anti-cheat, and absolutely no pay-to-win perks. Skill wins fights.</p>
+            </div>
+            <div class="f-card">
+              <div class="f-icon">⚔</div>
+              <h3>Custom Kits</h3>
+              <p>Class-based PvP with real strengths and counters. Every kit has a purpose.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="why">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-tag font-mono">02 / Why SpearRoyale</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title font-pixel">No <span class="accent">nonsense</span></h2>
+          <p class="section-sub">We cut the bloat. Here's what actually matters.</p>
+
+          <div class="why-grid">
+            <div class="why">
+              <span class="why-label font-mono">01</span>
+              <h4>No P2W</h4>
+              <p>Donations are cosmetic. You cannot buy a single combat advantage here.</p>
+            </div>
+            <div class="why">
+              <span class="why-label font-mono">02</span>
+              <h4>Active Staff</h4>
+              <p>Reports get reviewed fast. Cheaters get removed. Simple as that.</p>
+            </div>
+            <div class="why">
+              <span class="why-label font-mono">02</span>
+              <h4>1.21.11 Ready</h4>
+              <p>Running the latest version from day one. No waiting on version lag.</p>
+            </div>
+            <div class="why">
+              <span class="why-label font-mono">04</span>
+              <h4>No Resets</h4>
+              <p>Your stats and progress stay. No seasonal wipes unless we announce them.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rules">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-tag font-mono">03 / Rules</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title font-pixel">Read the <span class="accent">rules</span></h2>
+          <p class="section-sub">Keep it clean. Keep it competitive. Don't be the reason we add a new rule.</p>
+
+          <div class="rules-box">
+            <ol class="rules-list">
+              <li>No cheating, hacked clients, or macros.</li>
+              <li>No teaming in solo game modes.</li>
+              <li>No advertising, spam, or self-promotion.</li>
+              <li>No exploiting bugs. Report them and get a reward.</li>
+              <li>Respect players and staff. Trash talk is fine, harassment is not.</li>
+            </ol>
+            <p class="rules-footnote font-mono">
+              // Full rules and punishment tiers are pinned in our Discord.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="info">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-tag font-mono">05 / Server Info</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title font-pixel">Technical <span class="accent">details</span></h2>
+          <p class="section-sub">Everything you need to connect and confirm compatibility.</p>
+
+          <div class="info-grid">
+            <div class="info-cell">
+              <div class="info-key font-mono">IP Address</div>
+              <div class="info-val pink font-mono">spearroyale.xyz</div>
+            </div>
+            <div class="info-cell">
+              <div class="info-key font-mono">Version</div>
+              <div class="info-val font-mono">1.21.11</div>
+            </div>
+            <div class="info-cell">
+              <div class="info-key font-mono">Software</div>
+              <div class="info-val font-mono">Purpur</div>
+            </div>
+            <div class="info-cell">
+              <div class="info-key font-mono">Region</div>
+              <div class="info-val font-mono">EU / NA</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="community">
+        <div class="container">
+          <div class="community-cta">
+            <h3 class="font-pixel">Join the Discord</h3>
+            <p>Find teammates, report players, get support, and vote on new features before they ship.</p>
+            <a href="https://discord.spearroyale.xyz" target="_blank" rel="noopener" class="btn btn-discord btn-large">
+              discord.spearroyale.xyz <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="store">
+        <div class="container">
+          <div class="store-cta">
+            <h3 class="font-pixel">Store</h3>
+            <p>Ranks, cosmetics, and supporter perks. Every purchase keeps the server online and never buys you a combat edge.</p>
+            <a href="https://store.spearroyale.xyz" target="_blank" rel="noopener" class="btn btn-pink btn-large">
+              store.spearroyale.xyz <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand font-pixel">SPEAR<span>ROYALE</span></div>
+        <nav class="footer-nav font-mono">
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#modes">Modes</a>
+          <a href="#rules">Rules</a>
+          <a href="https://discord.spearroyale.xyz" target="_blank" rel="noopener">Discord</a>
+          <a href="https://store.spearroyale.xyz" target="_blank" rel="noopener">Store</a>
+        </nav>
+        <div class="footer-copy font-mono">© 2026 SpearRoyale</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
